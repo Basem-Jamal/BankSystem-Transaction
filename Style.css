@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(235, 235, 235);
+    overflow: hidden;
+    display: flex;
+}
+
+
+.titleTr , label{ 
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    justify-self: center;
+    background-color: transparent;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px 1px;
+    margin: 10px;
+    margin-left: 200px;
+}
+
+.flexFrom {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+.flexTo {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgb(219, 219, 219);
+}
+
+.titletCu {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+
+.current-content {
+    position: relative; 
+    width: 100%;  
+    height: 100%;
+}
+.current-content, input {
+    padding: 20px 20px;
+    margin: 15px;
+    width: 80%;
+    display: block;
+    justify-self: center;
+    align-content: center;
+    font-size: 24px;
+    outline: none;
+}
+
+
+.containerTransaction { 
+    position: relative;
+    width: 20%;
+    height: 100%;
+    left: 0;
+    background-color: aliceblue;
+}

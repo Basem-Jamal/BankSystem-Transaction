@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style.css">
+    <title>Bank - System</title>
+</head>
+<body>
+
+    <div class="containerTransaction">
+        <div class="flexTransaction">
+            <div class="contentTr">
+                <h1 class="titleTr">Transaction</h1>
+                <label for="#">From</label>
+                <input type="text" id="selectFromAccount">
+                <label for="#">To</label>
+                <input type="text" id="selectToAccount">
+
+                <input type="number">
+                <button id="btn">send</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="flexFrom">
+            <div class="titletCu"><h1>Current Account</h1></div>
+            <div class="current-content">
+                <input type="text" id="firstCurrentAccount" value="BS100200" readonly>
+                <input type="text" id="FromcurrentAmount" readonly>
+            </div>
+        </div>
+        <div class="flexTo">
+            <div class="titletCu"><h1>Second Account</h1></div>
+            <div class="current-content">
+                <label for="#"></label>
+                <input type="text" id="secondCurrentAccount" value="MS100300" readonly>
+                <input type="text" id="TocurrentAmount" readonly>
+            </div>
+        </div>
+    </div>
+
+    <script src="/Script.js"></script>
+</body>
+</html>
+
+
+
