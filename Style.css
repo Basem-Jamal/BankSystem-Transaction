@@ -7,16 +7,25 @@
 body {
     width: 100%;
     height: 100vh;
-    background-color: rgb(235, 235, 235);
     overflow: hidden;
     display: flex;
+    background-color: black;
 }
 
 
-.titleTr , label{ 
+.titleTr { 
+    position: relative;
     width: 100%;
     padding: 10px;
     margin: 10px;
+    bottom: 70px;
+}
+
+label{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+
 }
 
 .container {
@@ -39,12 +48,33 @@ body {
     height: 100%;
     padding: 20px;
     background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-right: 10px;
+    border: 1px solid #fff;
+    transition: ease-in .3s;
 }
 .flexTo {
+    color: #fff;
     width: 50%;
     height: 100%;
     padding: 20px;
-    background-color: rgb(219, 219, 219);
+    background: transparent;
+    backdrop-filter: blur(2032px);
+    border-radius: 20px;
+    margin-left: 10px;
+    border: 1px solid #fff;
+    transition: ease-in .2s;
+
+}
+
+.flexTo .current-content input  {
+    outline: #fff;
+    border: 1px solid #fff;
+}
+.flexFrom:hover,.flexTo:hover {
+    box-shadow: 1px 1px 30px 1px #fff;
+    transition: ease-out .2s;
+
 }
 
 .titletCu {
@@ -61,9 +91,9 @@ body {
 .current-content {
     position: relative; 
     width: 100%;  
-    height: 100%;
+    padding-top: 100px;
 }
-.current-content, input {
+.current-content input {
     padding: 20px 20px;
     margin: 15px;
     width: 80%;
@@ -72,13 +102,70 @@ body {
     align-content: center;
     font-size: 24px;
     outline: none;
+    border: 1px solid;
 }
 
 
-.containerTransaction { 
+header {
     position: relative;
     width: 20%;
     height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.containerTransaction { 
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
     left: 0;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
+}
+
+.contentTr {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+}
+
+.contentTr input {
+    padding: 20px 20px;
+    margin: 15px;
+    width: 80%;
+    display: block;
+    justify-self: center;
+    align-content: center;
+    font-size: 24px;
+    outline: none;
+    border: 1px solid;
+}
+
+.contentTr label {
+    font-size: 20px;
+}
+
+button {   
+    position: relative;
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    padding: 10px 60px;
+    font-size: 24px;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid;
+    background-color: #fff;
+    transition: ease-out .2s;
+    cursor: pointer;
+    top:80px;
+}
+
+button:hover{
+    background-color: #000;
+    color: #fff;
+    transition: ease-out .2s;
 }
