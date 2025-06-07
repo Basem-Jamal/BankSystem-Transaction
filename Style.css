@@ -12,8 +12,14 @@ body {
     background-color: black;
 }
 
+.closeTheWindow #close {
+    z-index: 1;
+}
 
-.titleTr { 
+#btnDeposit ,#btnTransaction {
+    margin-bottom: 50px;
+}
+.titleTr , .titleDp { 
     position: relative;
     width: 100%;
     padding: 10px;
@@ -113,22 +119,26 @@ header {
     background-color: rgb(255, 255, 255);
 }
 
-.containerTransaction { 
-    display: none;
+.containerTransaction ,
+.containerDeposit { 
     position: relative;
     width: 100%;
     height: 100%;
     left: 0;
     background-color: rgb(255, 255, 255);
 }
-
-.contentTr {
+.contentDp,
+.contentTr 
+{
     position: absolute;
     width: 100%;
     height: 100%;
     align-content: center;
+
 }
 
+
+.contentDp input ,
 .contentTr input {
     padding: 20px 20px;
     margin: 15px;
@@ -139,8 +149,11 @@ header {
     font-size: 24px;
     outline: none;
     border: 1px solid;
+
 }
 
+
+.contentDp label ,
 .contentTr label {
     font-size: 20px;
 }
