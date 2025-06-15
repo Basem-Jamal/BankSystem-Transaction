@@ -1,0 +1,40 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+
+}
+
+.container {
+    position: relative;
+    display: flex;
+    background: white;
+    height: 40%;
+    width: 40%;
+    justify-self: center;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    padding: 10px;
+    z-index: 11111;
+}
+
+.col-login {
+    display: flex;
+}
+
+.content{
+    display: flex;
+}

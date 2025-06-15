@@ -1,8 +1,7 @@
 class clsTransaction {
     constructor () {
         this.idFirstAccount     = document.getElementById("firstCurrentAccount");
-        this.amountFirstAccount = document.getElementById("FromcurrentAmount")
-
+        this.amountFirstAccount = document.getElementById("FromcurrentAmount");
 
         this.idSecondAccount    = document.getElementById("secondCurrentAccount");
         this.amountSecondAccount= document.getElementById("TocurrentAmount");
@@ -78,18 +77,33 @@ class clsTransaction {
                 alert("ok");
                 submit.addEventListener('click' , () => {
 
-                    const amount   = document.getElementById("depositAmount");
+                    const amount   = document.getElementById("depositAmount").value;
 
                     let fromAmount = parseFloat(this.amountFirstAccount.value);
                     // let toAmount   = parseFloat(this.amountSecondAccount.value);
-                     amount     = parseFloat(amount.value);
+
     
-                    this.amountFirstAccount.value = (fromAmount + amount).toFixed(2);
+                    this.amountFirstAccount.value = (fromAmount + Number(amount)).toFixed(2);
 
                     
 
                  })
             }
+            else if (this.idSecondAccount.value === accountNumber.value) {
+                alert("ok");
+                submit.addEventListener('click' , () => {
+
+                    const amount   = document.getElementById("depositAmount").value;
+
+                    let toAmount = parseFloat(this.amountSecondAccount.value);
+                    // let toAmount   = parseFloat(this.amountSecondAccount.value);
+
+    
+                    this.amountSecondAccount.value = (toAmount + Number(amount)).toFixed(2);
+                    
+                 })
+            }
+            
         })
 
     }
