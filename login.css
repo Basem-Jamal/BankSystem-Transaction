@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+    outline: none;
+    border: none;
 }
 
 html {
@@ -17,12 +20,19 @@ body {
 
 }
 
-.container {
+.fullContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-Login , .container-SingUP {
     position: relative;
     display: flex;
     background: white;
-    height: 40%;
-    width: 40%;
+    height: 50%;
+    width: 30%;
     justify-self: center;
     top: 50%;
     transform: translateY(-50%);
@@ -31,10 +41,75 @@ body {
     z-index: 11111;
 }
 
-.col-login {
+.col-login ,.col-singUp {
+    position: relative;
     display: flex;
+    padding: 20px;
+    width: 50%;
+    height: 100%;
 }
 
-.content{
-    display: flex;
+.title {
+    position: relative;
+    padding: 10px;
+    margin: 10px;
 }
+.content{
+    position: absolute;
+    display: flex;
+    padding: 20px;
+    align-self: center;
+}
+
+label{
+    display: flex;
+    font-size: 16px;
+    
+}
+#login-Email , #sign-Email ,#sign-Name, #login-Password,#sign-Password{
+    display: flex;
+    width: 40%;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    background-color: #000000;
+    color: #fff;
+}
+#sign-Name{
+    position: relative;
+    left: 23px;
+}
+#login-Email , #sign-Email{
+    width: 250px;
+    position: relative;
+    padding: 15px 30px;
+    font-size: 16px;
+    left: 27px;
+}
+#login-Password,#sign-Name, #sign-Password{
+    width: 250px;
+    position: relative;
+    padding: 15px 30px;
+    font-size: 16px;
+
+}
+
+#btnLogin, #btnSingup {
+    position: relative;
+    display: flex;
+    padding: 15px 30px;
+    margin: 10px;
+    justify-self: center;
+    background: #000;
+    color:#fff;
+    border-radius: 20px;
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+
+#btnLogin:hover,
+ #btnSingup:hover{
+    transition: ease 0.1s;
+    background: #d8d8d8;
+    color: #000000;
+}
+
