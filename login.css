@@ -21,10 +21,22 @@ body {
 }
 
 .fullContent{
-    width: 100%;
+    position: absolute;
+    width: 70%;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    border: #fff solid;
+    right: 0;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button#login,#sign {
+    display: flex;
+    padding: 15px 30px;
+    width: 100%;
+    background:#fff;
+    margin-bottom: 10px;
 }
 
 .container-Login , .container-SingUP {
@@ -32,7 +44,8 @@ body {
     display: flex;
     background: white;
     height: 50%;
-    width: 30%;
+    width: 40%;
+    margin-left: 100px;
     justify-self: center;
     top: 50%;
     transform: translateY(-50%);
