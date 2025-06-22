@@ -14,7 +14,7 @@
             <button id="sign">SignUP</button>
         </div>
 
-        <div class="container-Login">
+        <!-- <div class="container-Login">
             <div class="col-login">
                 <div class="title"><h1>Sing Up</h1></div>
                 <div class="content">
@@ -25,10 +25,47 @@
                     </form>
                 </div>
             </div>
+        </div> -->
+
+        <div class="container-SingUP">
+            <div class="col-singUp">
+                <div class="title"><h1>Login</h1></div>
+                <div class="content">
+                   <form action="#">
+                        <label for="">Name<input type="text" required placeholder="Name" id="sign-Name"></label>
+                        <label for="">Email<input type="email" required placeholder="Email" id="sign-Email"></label>
+                        <label for="">Password <input type="password" required placeholder="Password" id="sign-Password"></label>
+                        <input id="btnSingup" type="submit" value="SignUp">
+                   </form>
+                </div>
+            </div>
         </div>
 
+    </div>
+
+    <div class="containerShow">
 
 
+        <table border="1">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+              </tr>
+            </thead>
+            <tbody id="table-Body">
+              <tr id="table-Row">
+                <td id="table-Name">Ali</td>
+                <td id="table-Email">ali@example.com</td>
+                <td id="table-Password">12345</td>
+              </tr>
+            </tbody>
+          </table>
+          
+        <ul class="listInfo">
+
+        </ul>
     </div>
     <script src="/login.js"></script>
 </body>

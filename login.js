@@ -35,6 +35,8 @@ class clsLogin{
         }
         users.push(this.user);
         localStorage.setItem("users", JSON.stringify(users));
+
+        this.addUserToTable(this.user)
     }
     
     handel () {
@@ -45,8 +47,42 @@ class clsLogin{
         })
     }
 
+    showDataByTable (){
+        this.tableBody = document.getElementById('table-Body');
+
+        this.tableBody.innerHTML = "";
+
+        let users = JSON.parse(localStorage.getItem("users")) || [];
+        
+        users.forEach(user => {
+            let row = document.createElement("tr");
+
+            row.innerHTML = `
+            <td>${user.name}</td>
+            <td>${user.email}</td>
+            <td>${user.password}</td>
+            `;
+
+            this.tableBody.appendChild(row);
+        });
+    }
+
+    addUserToTable(user) {
+        let row = document.createElement("tr");
+    
+        row.innerHTML = `
+            <td>${user.name}</td>
+            <td>${user.email}</td>
+            <td>${user.password}</td>
+        `;
+    
+        this.tableBody.appendChild(row);
+    }
+    
+
 }
 
 const app = new clsLogin();
 
 app.handel()
+app.showDataByTable();
