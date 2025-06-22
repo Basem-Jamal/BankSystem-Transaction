@@ -30,12 +30,29 @@ body {
     gap: 20px;
 }
 
-button#login,#sign {
+.conversion {
     display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+button#login,#sign {
     padding: 15px 30px;
-    width: 100%;
+    width: 20%;
+    justify-self: center;
     background:#fff;
     margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease-in-out 0.1s;
+}
+
+button#login:hover,#sign:hover {
+
+    transition: ease-in-out 0.2s;
+    color: #fff;
+    background-color: #8a8a8a;
+
 }
 
 .container-Login , .container-SingUP {
